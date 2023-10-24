@@ -27,9 +27,10 @@ jobs:
       - name: Build and test with Maven
         working-directory: simple-api-student-main
         run: |
-          mvn clean verify
+          mvn -B verify sonar:sonar -Dsonar.projectKey=tp-devops -Dsonar.organization=alfonsi-jules -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}  --file ./pom.xml
+  
 
-# define job to build and publish docker image
+  # define job to build and publish docker image
   build-and-push-docker-image:
     needs: test-backend
     # run only when code is compiling and tests are passing
