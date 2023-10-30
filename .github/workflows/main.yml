@@ -36,6 +36,7 @@ jobs:
     needs: test-backend
     # run only when code is compiling and tests are passing
     runs-on: ubuntu-22.04
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
 
     # steps to perform in job
     steps:
@@ -48,6 +49,7 @@ jobs:
 
       - name: Build image and push backend
         uses: docker/build-push-action@v3
+        if: success('test-backend') && github.event_name == 'workflow_run' && github.event.workflow_run.event == 'completed'
         with:
           # relative path to the place where source code with Dockerfile is located
           context: ./simple-api-student-main
