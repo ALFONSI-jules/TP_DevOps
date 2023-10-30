@@ -1,0 +1,4 @@
+fr.takima.training.simpleapi.service.StudentService#getStudentsByDepartmentName(Ljava/lang/String;)Ljava/util/List;
+fr.takima.training.simpleapi.service.StudentService#validateDepartmentName(Ljava/lang/String;)V
+==
+findStudentsByDepartment_Name fr.takima.training.simpleapi.dao.StudentDAO#findStudentsByDepartment_Name(Ljava/lang/String;)Ljava/util/List;

@@ -1,0 +1,9 @@
+fr.takima.training.simpleapi.controller.DepartmentController#getDepartmentList(Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;
+org.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+java.util.Optional#isEmpty()Z
+java.util.Optional#ofNullable(Ljava/lang/Object;)Ljava/util/Optional;
+org.springframework.http.ResponseEntity#notFound()Lorg/springframework/http/ResponseEntity$HeadersBuilder;
+==
+getDepartmentByName fr.takima.training.simpleapi.service.DepartmentService#getDepartmentByName(Ljava/lang/String;)Lfr/takima/training/simpleapi/entity/Department;
+getStudentsByDepartmentName fr.takima.training.simpleapi.service.StudentService#getStudentsByDepartmentName(Ljava/lang/String;)Ljava/util/List;
+build org.springframework.http.ResponseEntity$HeadersBuilder#build()Lorg/springframework/http/ResponseEntity;

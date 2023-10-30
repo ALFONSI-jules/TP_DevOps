@@ -1,0 +1,7 @@
+organization=simple-api-jules
+projectKey=simple-api-jules_TP-part02
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.49405
+dashboardUrl=https://sonarcloud.io/dashboard?id=simple-api-jules_TP-part02
+ceTaskId=AYt_sRi_XkaGvHl-j0BS
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYt_sRi_XkaGvHl-j0BS

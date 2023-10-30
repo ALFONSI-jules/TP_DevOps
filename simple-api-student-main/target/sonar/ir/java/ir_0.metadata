@@ -1,0 +1,3 @@
+fr.takima.training.simpleapi.controller.GreetingController#instance-init#
+java.util.concurrent.atomic.AtomicLong#instance-init#
+java.util.concurrent.atomic.AtomicLong#<init>()V

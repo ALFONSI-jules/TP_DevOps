@@ -1,0 +1,4 @@
+fr.takima.training.simpleapi.service.StudentService#getStudentById(J)Lfr/takima/training/simpleapi/entity/Student;
+fr.takima.training.simpleapi.service.StudentService#validateStudentId(J)V
+==
+findById fr.takima.training.simpleapi.dao.StudentDAO#findById(J)Lfr/takima/training/simpleapi/entity/Student;

@@ -1,0 +1,5 @@
+fr.takima.training.simpleapi.controller.GreetingController#greeting(Ljava/lang/String;)Lfr/takima/training/simpleapi/controller/GreetingController$Greeting;
+fr.takima.training.simpleapi.controller.GreetingController$Greeting#instance-init#
+fr.takima.training.simpleapi.controller.GreetingController$Greeting#<init>(JLjava/lang/String;)V
+java.util.concurrent.atomic.AtomicLong#incrementAndGet()J
+java.lang.String#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;

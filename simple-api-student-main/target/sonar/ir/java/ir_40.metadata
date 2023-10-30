@@ -1,0 +1,4 @@
+fr.takima.training.simpleapi.service.StudentService#removeStudentById(J)V
+fr.takima.training.simpleapi.service.StudentService#validateStudentId(J)V
+==
+deleteById org.springframework.data.repository.CrudRepository#deleteById(Ljava/lang/Object;)V

@@ -1,0 +1,4 @@
+fr.takima.training.simpleapi.service.StudentService#getStudentsNumberByDepartmentName(Ljava/lang/String;)I
+fr.takima.training.simpleapi.service.StudentService#validateDepartmentName(Ljava/lang/String;)V
+==
+countAllByDepartment_Name fr.takima.training.simpleapi.dao.StudentDAO#countAllByDepartment_Name(Ljava/lang/String;)I

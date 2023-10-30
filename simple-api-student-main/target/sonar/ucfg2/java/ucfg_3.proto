@@ -1,0 +1,21 @@
+
+Wfr.takima.training.simpleapi.service.DepartmentService#getDepartments()Ljava/util/List;ê
+Ö/C:/Users/jules/Documents/TP_Docker/simple-api-student-main/src/main/java/fr/takima/training/simpleapi/service/DepartmentService.java (*"1*æ
+1 (¥
+±
+ (!4
+%0.fr.takima.training.simpleapi.dao.DepartmentDAO"__id*i
+
+__unknown_file (M*K8
+6fr.takima.training.simpleapi.service.DepartmentService"
+departmentDAO”–
+ (+
+%1java.util.List"Oorg.springframework.data.jpa.repository.JpaRepository#findAll()Ljava/util/List;*R
+
+__unknown_file (6
+4
+%0.fr.takima.training.simpleapi.dao.DepartmentDAO2	findAll()""
+ (,
+
+%1java.util.ListB:8
+6fr.takima.training.simpleapi.service.DepartmentServiceH

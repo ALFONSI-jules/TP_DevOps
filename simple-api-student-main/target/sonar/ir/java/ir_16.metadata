@@ -1,0 +1,4 @@
+fr.takima.training.simpleapi.controller.DepartmentController#getDepartments()Lorg/springframework/http/ResponseEntity;
+org.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+==
+getDepartments fr.takima.training.simpleapi.service.DepartmentService#getDepartments()Ljava/util/List;

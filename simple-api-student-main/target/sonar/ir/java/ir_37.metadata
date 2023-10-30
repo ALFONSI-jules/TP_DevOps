@@ -1,0 +1,3 @@
+fr.takima.training.simpleapi.service.StudentService#getAll()Ljava/util/List;
+==
+findAll org.springframework.data.jpa.repository.JpaRepository#findAll()Ljava/util/List;

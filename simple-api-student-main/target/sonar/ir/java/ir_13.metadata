@@ -1,0 +1,3 @@
+fr.takima.training.simpleapi.entity.Department#builder()Lfr/takima/training/simpleapi/entity/Department$Builder;
+fr.takima.training.simpleapi.entity.Department$Builder#instance-init#
+fr.takima.training.simpleapi.entity.Department$Builder#<init>()V

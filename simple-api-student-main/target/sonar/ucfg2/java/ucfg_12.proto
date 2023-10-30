@@ -1,0 +1,65 @@
+
+nfr.takima.training.simpleapi.entity.Department$Builder#build()Lfr/takima/training/simpleapi/entity/Department;‡
+}/C:/Users/jules/Documents/TP_Docker/simple-api-student-main/src/main/java/fr/takima/training/simpleapi/entity/Department.java< <("1*Û
+
+1=$ =(4rp
+=( =(24
+%0.fr.takima.training.simpleapi.entity.Department".fr.takima.training.simpleapi.entity.Department¡
+ž
+=$ =(4
+%1"8fr.takima.training.simpleapi.entity.Department#<init>()V*R
+
+__unknown_file (6
+4
+%0.fr.takima.training.simpleapi.entity.Department¥
+¢
+= =(5<
+
+department.fr.takima.training.simpleapi.entity.Department"__id*R
+
+__unknown_file (6
+4
+%0.fr.takima.training.simpleapi.entity.Department‰
+†
+> >(
+%2java.lang.Long"__id*^
+
+__unknown_file (B*@8
+6fr.takima.training.simpleapi.entity.Department$Builder"
+id‹ˆ
+> >( 
+
+%3void"Gfr.takima.training.simpleapi.entity.Department#setId(Ljava/lang/Long;)V*Z
+
+__unknown_file (>
+<
+
+department.fr.takima.training.simpleapi.entity.Department*2
+
+__unknown_file (
+
+%2java.lang.Long2setId(Ljava/lang/Long;)
+Š
+? ?(#
+%4java.lang.String"__id*`
+
+__unknown_file (D*B8
+6fr.takima.training.simpleapi.entity.Department$Builder"
+name•’
+? ?($
+
+%5void"Kfr.takima.training.simpleapi.entity.Department#setName(Ljava/lang/String;)V*Z
+
+__unknown_file (>
+<
+
+department.fr.takima.training.simpleapi.entity.Department*4
+
+__unknown_file (
+
+%4java.lang.String2setName(Ljava/lang/String;)"J
+@ @(>
+<
+
+department.fr.takima.training.simpleapi.entity.DepartmentB:8
+6fr.takima.training.simpleapi.entity.Department$BuilderH

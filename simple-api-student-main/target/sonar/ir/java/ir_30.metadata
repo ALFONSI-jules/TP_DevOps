@@ -1,0 +1,9 @@
+fr.takima.training.simpleapi.controller.StudentController#removeStudent(J)Lorg/springframework/http/ResponseEntity;
+org.springframework.http.ResponseEntity#ok()Lorg/springframework/http/ResponseEntity$BodyBuilder;
+java.util.Optional#isEmpty()Z
+java.util.Optional#ofNullable(Ljava/lang/Object;)Ljava/util/Optional;
+org.springframework.http.ResponseEntity#notFound()Lorg/springframework/http/ResponseEntity$HeadersBuilder;
+==
+removeStudentById fr.takima.training.simpleapi.service.StudentService#removeStudentById(J)V
+getStudentById fr.takima.training.simpleapi.service.StudentService#getStudentById(J)Lfr/takima/training/simpleapi/entity/Student;
+build org.springframework.http.ResponseEntity$HeadersBuilder#build()Lorg/springframework/http/ResponseEntity;

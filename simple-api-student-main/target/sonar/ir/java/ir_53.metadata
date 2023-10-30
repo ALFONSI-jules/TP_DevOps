@@ -1,0 +1,3 @@
+fr.takima.training.simpleapi.entity.Student#builder()Lfr/takima/training/simpleapi/entity/Student$Builder;
+fr.takima.training.simpleapi.entity.Student$Builder#instance-init#
+fr.takima.training.simpleapi.entity.Student$Builder#<init>()V
