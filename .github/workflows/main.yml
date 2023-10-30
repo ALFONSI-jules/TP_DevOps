@@ -27,7 +27,7 @@ jobs:
       - name: Build and test with Maven
         working-directory: simple-api-student-main
         run: |
-          mvn -B verify sonar:sonar -Dsonar.projectKey=simple-api-jules_TP-part02 -Dsonar.organization=simple-api-jules -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}  --file ./pom.xml
+          mvn -B verify sonar:sonar -Dsonar.projectKey=orga_jules_test -Dsonar.organization=orga_jules -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}  --file ./pom.xml
   
   
 
