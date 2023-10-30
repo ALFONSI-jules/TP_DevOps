@@ -17,11 +17,11 @@ public class DepartmentService {
 <span class="fc" id="L17">    }</span>
 
     public Department getDepartmentByName(String departmentName) {
-<span class="pc bpc" id="L20" title="1 of 4 branches missed.">        if (departmentName == null || departmentName.length() == 0) {</span>
+<span class="fc bfc" id="L20" title="All 4 branches covered.">        if (departmentName == null || departmentName.length() == 0) {</span>
 <span class="fc" id="L21">            throw new IllegalArgumentException(&quot;The department name must not be null or empty.&quot;);</span>
         }
 
-<span class="nc" id="L24">        return this.departmentDAO.findDepartmentByName(departmentName);</span>
+<span class="fc" id="L24">        return this.departmentDAO.findDepartmentByName(departmentName);</span>
     }
 
     public List&lt;Department&gt; getDepartments() {

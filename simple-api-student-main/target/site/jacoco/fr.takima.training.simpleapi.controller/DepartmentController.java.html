@@ -17,10 +17,10 @@ public class DepartmentController {
     private final StudentService studentService;
 
     @Autowired
-<span class="nc" id="L20">    public DepartmentController(DepartmentService departmentService, StudentService studentService) {</span>
-<span class="nc" id="L21">        this.departmentService = departmentService;</span>
-<span class="nc" id="L22">        this.studentService = studentService;</span>
-<span class="nc" id="L23">    }</span>
+<span class="fc" id="L20">    public DepartmentController(DepartmentService departmentService, StudentService studentService) {</span>
+<span class="fc" id="L21">        this.departmentService = departmentService;</span>
+<span class="fc" id="L22">        this.studentService = studentService;</span>
+<span class="fc" id="L23">    }</span>
 
     @GetMapping(&quot;/&quot;)
     public ResponseEntity&lt;Object&gt; getDepartments() {
@@ -29,32 +29,32 @@ public class DepartmentController {
 
     @GetMapping(&quot;/{departmentName}/students&quot;)
     public ResponseEntity&lt;Object&gt; getDepartmentList(@PathVariable(name=&quot;departmentName&quot;) String name) {
-<span class="nc" id="L32">        Optional&lt;Department&gt; optionalDepartment = Optional.ofNullable(this.departmentService.getDepartmentByName(name));</span>
-<span class="nc bnc" id="L33" title="All 2 branches missed.">        if (optionalDepartment.isEmpty()) {</span>
-<span class="nc" id="L34">            return ResponseEntity.notFound().build();</span>
+<span class="fc" id="L32">        Optional&lt;Department&gt; optionalDepartment = Optional.ofNullable(this.departmentService.getDepartmentByName(name));</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        if (optionalDepartment.isEmpty()) {</span>
+<span class="fc" id="L34">            return ResponseEntity.notFound().build();</span>
         }
 
-<span class="nc" id="L37">        return ResponseEntity.ok(this.studentService.getStudentsByDepartmentName(name));</span>
+<span class="fc" id="L37">        return ResponseEntity.ok(this.studentService.getStudentsByDepartmentName(name));</span>
     }
 
     @GetMapping(&quot;/{departmentName}&quot;)
     public ResponseEntity&lt;Object&gt; getDepartmentByName(@PathVariable(name=&quot;departmentName&quot;) String name) {
-<span class="nc" id="L42">        Optional&lt;Department&gt; optionalDepartment = Optional.ofNullable(this.departmentService.getDepartmentByName(name));</span>
-<span class="nc bnc" id="L43" title="All 2 branches missed.">        if (optionalDepartment.isEmpty()) {</span>
-<span class="nc" id="L44">            return ResponseEntity.notFound().build();</span>
+<span class="fc" id="L42">        Optional&lt;Department&gt; optionalDepartment = Optional.ofNullable(this.departmentService.getDepartmentByName(name));</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        if (optionalDepartment.isEmpty()) {</span>
+<span class="fc" id="L44">            return ResponseEntity.notFound().build();</span>
         }
 
-<span class="nc" id="L47">        return ResponseEntity.ok(this.departmentService.getDepartmentByName(name));</span>
+<span class="fc" id="L47">        return ResponseEntity.ok(this.departmentService.getDepartmentByName(name));</span>
     }
 
     @GetMapping(&quot;/{departmentName}/count&quot;)
     public ResponseEntity&lt;Object&gt; getDepartmentCountByName(@PathVariable(name=&quot;departmentName&quot;) String name) {
-<span class="nc" id="L52">        Optional&lt;Department&gt; optionalDepartment = Optional.ofNullable(this.departmentService.getDepartmentByName(name));</span>
-<span class="nc bnc" id="L53" title="All 2 branches missed.">        if (optionalDepartment.isEmpty()) {</span>
-<span class="nc" id="L54">            return ResponseEntity.notFound().build();</span>
+<span class="fc" id="L52">        Optional&lt;Department&gt; optionalDepartment = Optional.ofNullable(this.departmentService.getDepartmentByName(name));</span>
+<span class="fc bfc" id="L53" title="All 2 branches covered.">        if (optionalDepartment.isEmpty()) {</span>
+<span class="fc" id="L54">            return ResponseEntity.notFound().build();</span>
         }
 
-<span class="nc" id="L57">        return ResponseEntity.ok(this.studentService.getStudentsNumberByDepartmentName(name));</span>
+<span class="fc" id="L57">        return ResponseEntity.ok(this.studentService.getStudentsNumberByDepartmentName(name));</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
