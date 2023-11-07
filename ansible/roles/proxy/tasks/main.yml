@@ -1,0 +1,9 @@
+- name: Run HTTPD
+  docker_container:
+    name: httpd
+    image: jalfonsi/proxy
+    pull: true
+    ports:
+      - "80:80"
+    networks:
+      - name: network_one

@@ -6,6 +6,8 @@ services:
       context: ./simple-api-student-main
       dockerfile: Dockerfile
     container_name: simple-api
+    ports:
+      - "8080:8080"
     networks:
       - app-network
     depends_on:
@@ -23,9 +25,21 @@ services:
     build:
       context: ./front-end
       dockerfile: Dockerfile
-    container_name: front
+    container_name: proxy
     ports:
-      - "80:80"
+      - "8092:80"
+    networks:
+      - app-network
+    depends_on:
+      - backend
+      - front
+  front:
+    build:
+      context: ./devops-front-main
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "8093:80"
     networks:
       - app-network
     depends_on:

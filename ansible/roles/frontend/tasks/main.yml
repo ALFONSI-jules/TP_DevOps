@@ -1,0 +1,9 @@
+- name: Run front
+  docker_container:
+    name: frontend
+    image: jalfonsi/front
+    pull: true
+    ports:
+      - "8092:80"
+    networks:
+      - name: network_one

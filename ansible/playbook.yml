@@ -1,0 +1,11 @@
+- name: Install Docker using the Docker role
+  hosts: all
+  gather_facts: false
+  become: yes
+  roles:
+    - docker
+    - network
+    - database
+    - proxy
+    - app
+    - frontend

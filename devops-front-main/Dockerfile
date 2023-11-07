@@ -12,11 +12,6 @@ COPY .env.production .
 RUN npm install
 RUN npm run build
 
-FROM httpd:2.4.58
-
-COPY index.html /usr/local/apache2/htdocs/
-
-COPY httpd.conf /usr/local/apache2/conf/httpd.conf
 
 
 FROM nginx:1.15.7-alpine

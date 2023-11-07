@@ -1,0 +1,10 @@
+- name: Run App
+  docker_container:
+    name: simple-api
+    image: jalfonsi/simple-api
+    pull: true
+    networks:
+      - name: "network_one"
+    ports:
+      - "8080:8080"
+
