@@ -71,17 +71,17 @@ On importe d’abord une image java. On définit une nouvelle fois une variable 
 
 Ce fichier docker compose permet de définir tous les containers et networks dans un seul et même fichier. On créé ainsi des services indiquant où trouver les différents dockerfile avec le contexte, le nom du container, le port sur lequel on l’expose, le network si nécessaire et les autres services dont les containers peuvent dépendre.
 
-1-5 Document your publication commands and published images in dockerhub
+**1-5 Document your publication commands and published images in dockerhub**
 
 ![Capture d’écran du 2023-11-06 16-16-50](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/7213a9d5-d643-4dce-aba5-63756620f0c8)
 
 **TP Part 02 :**
 
-2-1 What are testcontainers?
+**2-1 What are testcontainers?**
 
 Testcontainers est une bibliothèque Java qui permet d’instancier un conteneur Docker lors des tests. Testcontainers gère le cycle de vie des conteneurs, les démarrant avant l'exécution des tests et les arrêtant après leur fin. Cela permet aux tests d'être isolés, reproductibles et cohérents sur différents environnements.
 
-2-2 Document your Github Actions configurations
+**2-2 Document your Github Actions configurations**
 
 Pour gérer mes github action configurations, j'ai réalisé deux fichier différents. Un premier qui s'occupe de tester le backend, et un deuxième qui se lance uniquement si le premier job passe, et qui permet de build et de push nos images docker. J'utilise un workflow dans le deuxième fichier pour gérer l'exécution à retardement.
 
@@ -103,7 +103,7 @@ Pour gérer mes github action configurations, j'ai réalisé deux fichier diffé
 
 
 
-2-3 Document your quality gate configuration
+**2-3 Document your quality gate configuration**
 
 Pour obtenir une analyse dans sonarcloud de notre backend, on gère cela dans la CI du backend. On lance une commande maven permettant d'accéder à une organisation sonarcloud distante, en utilisant pour cela un token définit en secret sur notre github action.
 
@@ -116,7 +116,7 @@ Pour obtenir une analyse dans sonarcloud de notre backend, on gère cela dans la
 
 **TP Part 03 :**
 
-3-1 Document your inventory and base commands
+**3-1 Document your inventory and base commands**
 
 ![Capture d’écran du 2023-11-07 14-54-33](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/670064f6-adb9-4140-87fb-be8d4df0d4c0)
 
@@ -124,13 +124,13 @@ On test avec une commande de ping que tout fonctionne bien.
 
 ![Capture d’écran du 2023-11-07 15-38-19](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/f30604e4-6b3f-4083-b5a3-e3b7a34b19e7)
 
-3-2 Document your playbook
+**3-2 Document your playbook**
 
 ![Capture d’écran du 2023-11-07 15-43-28](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/224a154c-1600-4249-b405-dbb284497dbb)
 
 Ce fichier playbook permet de définir tous les roles que l'on va utiliser pour créer nos containers par la suite.
 
-3-3 Document your docker_container tasks configuration
+**3-3 Document your docker_container tasks configuration**
 
 - Dans un premier temps on définit notre role docker qui permet de l'installer sur notre serveur et de le lancer.
 
@@ -151,5 +151,3 @@ Ce fichier playbook permet de définir tous les roles que l'on va utiliser pour 
 ![Capture d’écran du 2023-11-07 15-59-02](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/4c77be9d-2617-4961-9ac6-cb84c3185de0)
 
 ![Capture d’écran du 2023-11-07 15-59-49](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/e3c03171-b7b7-4544-8805-2c3c0664cf46)
-
-
