@@ -1,9 +1,9 @@
-# TP_DevOps
+**# TP_DevOps**
 Rapport TP DevOps
 
-TP Part 01 :
+**TP Part 01 :**
 
-1-1 Document your database container essentials: commands and Dockerfile
+**1-1 Document your database container essentials: commands and Dockerfile**
 
 - Premièrement, on créé un fichier 01-CreateScheme.sql dans lequel on créé les Tables de notre base de données.
 
@@ -39,7 +39,7 @@ TP Part 01 :
 ![Capture d’écran du 2023-11-06 14-21-44](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/10b103fb-bc50-4831-838b-43e2f4ea4383)
 
 
-1-2 Why do we need a multistage build? And explain each step of this dockerfile
+**1-2 Why do we need a multistage build? And explain each step of this dockerfile**
 
 Le multistage build permet de créer des images Docker plus efficaces et plus petites en divisant le processus de construction en plusieurs étapes. Chaque étape produit une image intermédiaire, dans laquelle on copie uniquement les fichiers nécessaires. Cela aide à réduire la taille de l'image finale en excluant les dépendances de construction, les fichiers intermédiaires et les outils inutiles.
 
@@ -54,7 +54,7 @@ Etape run :
 
 On importe d’abord une image java. On définit une nouvelle fois une variable d’environnement et le répertoire de travail. Ensuite on copie le fichier JAR résultant de l'étape de construction dans le répertoire de travail du container. Enfin, on spécifie la commande par défaut à exécuter lorsque le conteneur démarre. 
 
-1-3 Document docker-compose most important commands
+**1-3 Document docker-compose most important commands**
 
 - Docker compose up permet de démarrer tous les containers présents dans le fichier docker compose
 
@@ -62,77 +62,11 @@ On importe d’abord une image java. On définit une nouvelle fois une variable 
 
 - Docker compose build permet de reconstruire les images des différents containers contenus dans le fichier docker compose.
 
-1-4 Document your docker-compose file 
+**1-4 Document your docker-compose file** 
 
 
 ![Capture d’écran du 2023-11-06 15-57-10](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/1738c994-1fa8-48d5-b4d8-d5064967ee70)
 ![Capture d’écran du 2023-11-06 15-57-41](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/dc814630-b325-40f8-955a-6297efcd927c)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Ce fichier docker compose permet de définir tous les containers et networks dans un seul et même fichier. On créé ainsi des services indiquant où trouver les différents dockerfile avec le contexte, le nom du container, le port sur lequel on l’expose, le network si nécessaire et les autres services dont les containers peuvent dépendre.
