@@ -73,3 +73,83 @@ Ce fichier docker compose permet de définir tous les containers et networks dan
 
 1-5 Document your publication commands and published images in dockerhub
 
+![Capture d’écran du 2023-11-06 16-16-50](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/7213a9d5-d643-4dce-aba5-63756620f0c8)
+
+**TP Part 02 :**
+
+2-1 What are testcontainers?
+
+Testcontainers est une bibliothèque Java qui permet d’instancier un conteneur Docker lors des tests. Testcontainers gère le cycle de vie des conteneurs, les démarrant avant l'exécution des tests et les arrêtant après leur fin. Cela permet aux tests d'être isolés, reproductibles et cohérents sur différents environnements.
+
+2-2 Document your Github Actions configurations
+
+Pour gérer mes github action configurations, j'ai réalisé deux fichier différents. Un premier qui s'occupe de tester le backend, et un deuxième qui se lance uniquement si le premier job passe, et qui permet de build et de push nos images docker. J'utilise un workflow dans le deuxième fichier pour gérer l'exécution à retardement.
+
+- CI du back-end
+
+![Capture d’écran du 2023-11-07 14-29-35](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/bef44164-915b-4c7c-8511-386e46f64141)
+
+- CI docker
+
+![Capture d’écran du 2023-11-07 14-31-24](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/ab40151d-a6c3-45ab-b3b6-a1ffae42c1df)
+
+![Capture d’écran du 2023-11-07 14-32-07](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/b6c30526-2fc5-41e1-b76f-fab6a6097b21)
+
+- Résultats
+
+![Capture d’écran du 2023-11-07 14-37-17](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/6d52fef8-0132-45ba-84dc-49a06b4adf62)
+
+![Capture d’écran du 2023-11-07 14-40-42](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/63975895-7d50-468a-9919-9a0ac9aa7f89)
+
+
+
+2-3 Document your quality gate configuration
+
+Pour obtenir une analyse dans sonarcloud de notre backend, on gère cela dans la CI du backend. On lance une commande maven permettant d'accéder à une organisation sonarcloud distante, en utilisant pour cela un token définit en secret sur notre github action.
+
+![Capture d’écran du 2023-11-07 14-50-15](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/80b107d6-a339-4926-af6f-a58d9fa108a9)
+
+![Capture d’écran du 2023-11-07 14-51-24](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/917a7b58-2820-4554-a414-5a9deebfe30f)
+
+![Capture d’écran du 2023-11-07 14-47-23](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/b0a1023f-23e1-4ce8-a040-a84180c480ed)
+
+
+**TP Part 03 :**
+
+3-1 Document your inventory and base commands
+
+![Capture d’écran du 2023-11-07 14-54-33](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/670064f6-adb9-4140-87fb-be8d4df0d4c0)
+
+On test avec une commande de ping que tout fonctionne bien.
+
+![Capture d’écran du 2023-11-07 15-38-19](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/f30604e4-6b3f-4083-b5a3-e3b7a34b19e7)
+
+3-2 Document your playbook
+
+![Capture d’écran du 2023-11-07 15-43-28](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/224a154c-1600-4249-b405-dbb284497dbb)
+
+Ce fichier playbook permet de définir tous les roles que l'on va utiliser pour créer nos containers par la suite.
+
+3-3 Document your docker_container tasks configuration
+
+- Dans un premier temps on définit notre role docker qui permet de l'installer sur notre serveur et de le lancer.
+
+![Capture d’écran du 2023-11-07 15-48-28](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/baa89606-0323-48c6-82ca-e5bece58a239)
+
+- Ensuite on définit notre role network qui permet de créer un network comme fait dans la première partie du TP.
+
+![Capture d’écran du 2023-11-07 15-54-14](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/e4536ffd-d318-4c7e-9994-5f8d79bc87d8)
+
+- Ensuite on définit notre container qui permet de se connecter à notre database en définissant nos variables d'environnements.
+
+![Capture d’écran du 2023-11-07 15-56-38](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/d519ae29-2d82-4865-957d-dd855f377bf7)
+
+- Puis, on créé nos containers qui run le proxy, le back et le front.
+
+![Capture d’écran du 2023-11-07 15-58-37](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/cb7e74de-6e1c-4499-a638-2863bc988a3e)
+
+![Capture d’écran du 2023-11-07 15-59-02](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/4c77be9d-2617-4961-9ac6-cb84c3185de0)
+
+![Capture d’écran du 2023-11-07 15-59-49](https://github.com/ALFONSI-jules/TP_DevOps/assets/73819497/e3c03171-b7b7-4544-8805-2c3c0664cf46)
+
+
